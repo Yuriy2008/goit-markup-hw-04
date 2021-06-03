@@ -1,6 +1,6 @@
 :root {
-  --primary-font: "Roboto", sans-serif;
-  --logo-font: "Raleway", sans-serif;
+  --primary-font: 'Roboto', sans-serif;
+  --logo-font: 'Raleway', sans-serif;
   --main-bcg-color: #ffffff;
   --team-section-bcg-color: #f5f4fa;
   --hero-footer-bcg-color: #2f303a;
@@ -118,6 +118,12 @@ img {
 .nav-list-element:not(:last-child) {
   margin-right: 50px;
 }
+.icon {
+  width: 10px;
+  height: 10px;
+  color: #2f303a;
+}
+
 .nav-list-item {
   display: inline-block;
   padding-top: 32px;
@@ -141,8 +147,15 @@ img {
   padding-top: 200px;
   padding-bottom: 200px;
   background-color: var(--hero-footer-bcg-color);
+  background-image: url(../images/icons/Img-bg.jpg);
   text-align: center;
+  background-size: cover;
 }
+.fon-main-section {
+  display: block;
+  background-repeat: ;
+}
+
 .main-title {
   margin-right: auto;
   margin-left: auto;
@@ -175,10 +188,15 @@ img {
   display: flex;
   margin-right: calc(-1 * var(--margin-card));
 }
-.features-list > .features-list-element {
+.features-list .features-list-element {
   flex-basis: calc((100% - 4 * var(--margin-card)) / 4);
   margin-right: var(--margin-card);
 }
+
+.features-list-element:last-child {
+  margin-right: 0px;
+}
+
 .features-title {
   min-width: 270px;
   margin-bottom: 10px;
@@ -214,6 +232,10 @@ img {
 .occupations-list > .occupations-list-element {
   flex-basis: calc((100% - 3 * var(--margin-card)) / 3);
   margin-right: var(--margin-card);
+}
+
+.occupations-list-element:last-child {
+  margin-right: 0px;
 }
 
 /*TEAM SECTION*/
@@ -334,4 +356,29 @@ img {
   font-size: 16px;
   line-height: 1.87;
   color: var(--main-text-color);
+}
+
+.baton {
+  margin: 20px;
+  display: inline-block;
+  padding: 20px 40px;
+  background-color: tomato;
+  color: #eeeeee;
+  text-decoration: none;
+  border: 2px solid black;
+  border-radius: 2px;
+}
+
+.baton:hover,
+.baton:focus {
+  background-color: black;
+  color: #fff;
+  border-color: tomato;
+}
+.baton-icon {
+  display: inline-block;
+  background-color: blue;
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
 }
