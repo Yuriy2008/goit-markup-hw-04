@@ -122,6 +122,7 @@ img {
   width: 10px;
   height: 10px;
   color: #2f303a;
+  justify-content: center;
 }
 
 .nav-list-item {
