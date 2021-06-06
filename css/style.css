@@ -121,8 +121,7 @@ img {
 .icon {
   width: 10px;
   height: 10px;
-  color: #2f303a;
-  justify-content: center;
+  fill: inherit;
 }
 
 .nav-list-item {
@@ -151,10 +150,6 @@ img {
   background-image: url(../images/icons/Img-bg.jpg);
   text-align: center;
   background-size: cover;
-}
-.fon-main-section {
-  display: block;
-  background-repeat: ;
 }
 
 .main-title {
