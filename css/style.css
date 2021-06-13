@@ -152,8 +152,12 @@ img {
   margin-right: 50px;
 }
 
+a.up-contacts-list-item.link:hover .icons-contacts {
+  fill: var(--accent-logo-hover-color);
+}
+
 .icons-contacts {
-  display: inline-flex;
+  display: block;
   margin-right: 10px;
   fill: var(--text-color);
   justify-content: center;
