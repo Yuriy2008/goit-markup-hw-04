@@ -63,7 +63,6 @@ img {
 }
 .link {
   text-decoration: none;
-  display: block;
 }
 
 .container {
@@ -353,6 +352,11 @@ img {
   fill: #fff;
 }
 
+.link-icons {
+  display: block;
+  padding: 12px;
+}
+
 .icons {
   display: flex;
   fill: var(--icon-color);
@@ -371,6 +375,8 @@ img {
 .section-title {
   text-align: center;
   margin-bottom: 50px;
+  font-size: 36px;
+  color: #212121;
 }
 
 .client-icons {
