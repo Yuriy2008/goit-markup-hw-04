@@ -62,6 +62,7 @@ img {
   height: auto;
 }
 .link {
+  display: block;
   text-decoration: none;
 }
 
@@ -415,9 +416,15 @@ img {
   display: flex;
   background-color: var(--hero-footer-bcg-color);
 
-  padding-top: 60px;
-  padding-bottom: 60px;
+  /* padding-top: 60px; */
+  padding-bottom: 20px;
 }
+
+.footer-container {
+  display: flex;
+  align-items: baseline;
+}
+
 .title-social {
   margin: 0;
 }
@@ -442,21 +449,13 @@ img {
 
 .our-icons {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
   padding-top: 72px;
-  padding-left: 70px;
-  margin-left: 10px;
-}
-
-.our-icons ul {
-  display: flex;
-  justify-content: center;
-  padding-top: 20px;
+  margin-left: 70px;
 }
 
 .our-icons .title {
-  color: var(--white-color);
+  color: #ffffff;
   width: 145px;
   height: 16px;
   left: 516px;
@@ -466,12 +465,19 @@ img {
   text-transform: uppercase;
 }
 
+.our-icons ul {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+
 .footer-icons {
   background-color: rgba(255, 255, 255, 0.1);
+  flex-basis: calc((100% - 30px) / 4);
 }
 
 .ft-icons {
-  fill: var(--white-color);
+  fill: #fff;
 }
 
 /*PAGE PORTFOLIO Galery*/
