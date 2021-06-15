@@ -157,10 +157,11 @@ a.up-contacts-list-item.link:hover .icons-contacts {
 }
 
 .icons-contacts {
-  display: block;
+  display: flex;
   margin-right: 10px;
   fill: var(--text-color);
   justify-content: center;
+  align-items: center;
 }
 
 .nav-list-item {
