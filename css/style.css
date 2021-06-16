@@ -367,6 +367,7 @@ a.up-contacts-list-item.link:hover .icons-contacts {
   flex-wrap: wrap;
   justify-content: center;
   font: inherit;
+  margin-top: 19px;
   /* padding: 16px 32px 30px; */
 }
 
