@@ -29,6 +29,7 @@
   --white-color: rgba(255, 255, 255, 1);
   --icon-color: rgba(175, 177, 184, 1);
   --main-font: 'Roboto', sans-serif;
+  --white-color: rgba(255, 255, 255, 1);
 }
 
 * {
@@ -276,6 +277,7 @@ a.up-contacts-list-item.link:hover .icons-contacts {
 
 .features-title {
   min-width: 270px;
+  margin-top: 30px;
   margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
@@ -389,7 +391,10 @@ a.up-contacts-list-item.link:hover .icons-contacts {
 .team-icons:hover,
 .team-icons:focus {
   background-color: var(--accent-color);
-  fill: #fff;
+}
+
+.team-icons:hover .icons {
+  fill: var(--white-color);
 }
 
 .link-icons {
@@ -455,7 +460,6 @@ a.up-contacts-list-item.link:hover .icons-contacts {
   display: flex;
   background-color: var(--hero-footer-bcg-color);
 
-  /* padding-top: 60px; */
   padding-bottom: 20px;
 }
 
@@ -490,7 +494,7 @@ a.up-contacts-list-item.link:hover .icons-contacts {
   display: flex;
   flex-direction: column;
   padding-top: 72px;
-  margin-left: 70px;
+  padding-left: 70px;
 }
 
 .our-icons .title {
