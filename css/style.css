@@ -141,7 +141,9 @@ img {
 .up-contacts-list-item:focus,
 .down-contacts-list-item:hover,
 .down-contacts-list-item:focus,
-.icons-contacts:hover {
+.icons-contacts:hover,
+.icons-contacts:focus
+ {
   fill: var(--accent-logo-hover-color);
   color: var(--accent-logo-hover-color);
 }
@@ -378,7 +380,7 @@ a.up-contacts-list-item.link:hover .icons-contacts {
   width: 44px;
   height: 44px;
   flex-basis: calc((100% - 90px) / 4);
-  border-radius: 50%;
+ 
   margin-right: 10px;
   align-items: center;
   justify-content: center;
@@ -388,8 +390,8 @@ a.up-contacts-list-item.link:hover .icons-contacts {
   margin-right: 0;
 }
 
-.team-icons:hover,
-.team-icons:focus {
+.link-icons:hover,
+.link-icons:focus {
   background-color: var(--accent-color);
 }
 
@@ -400,6 +402,7 @@ a.up-contacts-list-item.link:hover .icons-contacts {
 .link-icons {
   display: block;
   padding: 12px;
+   border-radius: 50%;
 }
 
 .icons {
@@ -450,9 +453,14 @@ a.up-contacts-list-item.link:hover .icons-contacts {
   fill: var(--icon-color);
 }
 
-.client-icons:hover .icons-partners,
+/* .client-icons:hover .icons-partners,
 .client-icons:focus .icons-partners {
   fill: var(--accent-color);
+} */
+.client-link:hover .icons-partners,
+.client-link:focus .icons-partners
+{
+ fill: var(--accent-color);
 }
 
 /*FOOTER*/
@@ -517,6 +525,7 @@ a.up-contacts-list-item.link:hover .icons-contacts {
 .footer-icons {
   background-color: rgba(255, 255, 255, 0.1);
   flex-basis: calc((100% - 30px) / 4);
+  border-radius: 50%;
 }
 
 .ft-icons {
@@ -551,6 +560,8 @@ a.up-contacts-list-item.link:hover .icons-contacts {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
+
+
 .galery-list {
   display: flex;
   flex-wrap: wrap;
@@ -564,7 +575,12 @@ a.up-contacts-list-item.link:hover .icons-contacts {
   background: var(--main-bcg-color);
 }
 
-.galery-list .galery-list-element:hover {
+.galery-link{
+  text-decoration: none;
+}
+
+.galery-list .galery-list-element:hover,
+.galery-list .galery-list-element:focus{
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
