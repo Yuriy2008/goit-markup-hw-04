@@ -329,6 +329,30 @@ a.up-contacts-list-item.link:hover .icons-contacts {
   margin-right: 0px;
 }
 
+.occupations-thumb{
+  position: relative;
+  width: 100%;
+  background-color: crimson;
+}
+.occupations-text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0px;
+
+  margin: 0;
+  width: 370px;
+  height: 70px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--main-bcg-color);
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
 /*TEAM SECTION*/
 .team-section {
   background-color: var(--team-section-bcg-color);
@@ -628,4 +652,73 @@ a.up-contacts-list-item.link:hover .icons-contacts {
   width: 20px;
   height: 20px;
   vertical-align: middle;
+}
+ 
+  /* overley portfolio */
+
+.project-thumb{
+  position: relative;
+  overflow:hidden;
+}
+
+.project-overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(33,150,243,0.9);
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.galery-list-element:hover .project-overlay{
+  transform: translate(0);
+}
+
+.project-text{
+   position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  display: flex;
+  justify-content: center;
+
+  width: 322px;
+  height: 168px;
+  align-items: center;
+  margin: 0;
+  color: var(--main-bcg-color);
+  font-size: 18px;
+  line-height: 1.56;
+}
+
+/* modal window */
+
+.backdrop{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(202, 18, 55, 0.5);
+}
+
+
+
+.modal{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  min-width: 400px;
+  min-height: 400px;
+  padding: 15px;
+  background-color: #fff;
+}
+
+.backdrop.is-hidden{
+  opacity: 0;
+  pointer-events: none;
 }

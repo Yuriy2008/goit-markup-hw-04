@@ -55,7 +55,7 @@
         <section class="main-section">
             <div class="container">
                 <h1 class="main-title">Эффективные решения для вашего бизнеса</h1>
-                <button class="main-section-btn" type="button">Заказать услугу</button>
+                <button class="main-section-btn" type="button" data-modal-open>Заказать услугу</button>
             </div>
         </section>
         <!--Features section-->
@@ -116,12 +116,24 @@
             <div class="container">
                 <h2 class="secondary-title">Чем мы занимаемся</h2>
                 <ul class="occupations-list list">
-                    <li class="occupations-list-element"><img src="images/img1/box1.png" alt="Пишем код" width="370"
-                            height="294" /></li>
-                    <li class="occupations-list-element"><img src="images/img1/box2.png" alt="Делаем адаптивные сайты"
-                            width="370" height="294" /></li>
-                    <li class="occupations-list-element"><img src="images/img1/box3.png" alt="Делаем дизайн сайтов"
-                            width="370" height="294" /></li>
+                    <li class="occupations-list-element">
+                        <div class="occupations-thumb">
+                            <img src="images/img1/box1.png" alt="Пишем код" width="370" height="294" />
+                            <p class="occupations-text">Десктопные приложения</p>
+                        </div>
+                    </li>
+                    <li class="occupations-list-element">
+                        <div class="occupations-thumb">
+                            <img src="images/img1/box2.png" alt="Делаем адаптивные сайты" width="370" height="294" />
+                            <p class="occupations-text">Мобильные приложен</p>
+                        </div>
+                    </li>
+                    <li class="occupations-list-element">
+                        <div class="occupations-thumb">
+                            <img src="images/img1/box3.png" alt="Делаем дизайн сайтов" width="370" height="294" />
+                            <p class="occupations-text">Дизайнерские решения</p>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </section>
@@ -425,6 +437,18 @@
         </div>
 
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus asperiores tempore mollitia id
+                inventore
+                sit!
+            </p>
+            <button data-modal-close>Closed</button>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
